@@ -48,7 +48,24 @@ class SpaceCraft {
         }
     }
     turnRight() {
-        this.direction = 'E';
+        if(this.direction === 'N') {
+            this.direction = 'E';
+        }
+        else if(this.direction === 'S') {
+            this.direction = 'W';
+        }
+        else if(this.direction === 'E') {
+            this.direction = 'S';
+        }
+        else if(this.direction === 'W') {
+            this.direction = 'N';
+        }
+        else if(this.direction === 'U') {
+            this.direction = this.direction;
+        }
+        else if(this.direction === 'D') {
+            this.direction = this.direction;
+        }
     }
     turnLeft() {}
     turnUp() {}
