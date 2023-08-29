@@ -66,3 +66,14 @@ describe('moveForward', () => {
         expect(spaceCraft.direction).toBe('D');
     });
 });
+
+describe('moveBackward', () => {
+    test('SpaceCraft moves backward in N direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+        spaceCraft.moveBackward();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(-1);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('N');
+    });
+});

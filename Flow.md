@@ -48,3 +48,221 @@ Snapshots:   0 total
 Time:        0.598 s, estimated 1 s
 Ran all test suites.
 ```
+### Fifth Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       1 passed, 1 total                                                                                                                                  
+Snapshots:   0 total
+Time:        0.394 s, estimated 1 s
+Ran all test suites.
+```
+### Sixth Commit
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (8 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    × SpaceCraft moves forward in N direction (2 ms)                                                                                                            
+                                                                                                                                                                
+  ● moveForward › SpaceCraft moves forward in N direction
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      17 |         spaceCraft.moveForward();
+      18 |         expect(spaceCraft.x).toBe(0);
+    > 19 |         expect(spaceCraft.y).toBe(1);
+         |                              ^
+      20 |         expect(spaceCraft.z).toBe(0);
+      21 |         expect(spaceCraft.direction).toBe('N');
+      22 |     });
+
+      at Object.toBe (spaceCraft.test.js:19:30)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       1 failed, 1 passed, 2 total                                                                                                                        
+Snapshots:   0 total
+Time:        0.593 s, estimated 1 s
+Ran all test suites.
+```
+### Seventh Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction                                                                                                                   
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       2 passed, 2 total                                                                                                                                  
+Snapshots:   0 total
+Time:        0.555 s, estimated 1 s
+Ran all test suites.
+```
+### Eighth Commit
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    × SpaceCraft moves forward in S direction (3 ms)                                                                                                            
+    × SpaceCraft moves forward in E direction                                                                                                                   
+    × SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    × SpaceCraft moves forward in U direction (1 ms)                                                                                                            
+    × SpaceCraft moves forward in D direction (1 ms)                                                                                                            
+                                                                                                                                                                
+  ● moveForward › SpaceCraft moves forward in S direction                                                                                                       
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: -1
+    Received: 0
+
+      26 |         spaceCraft.moveForward();
+      27 |         expect(spaceCraft.x).toBe(0);
+    > 28 |         expect(spaceCraft.y).toBe(-1);
+         |                              ^
+      29 |         expect(spaceCraft.z).toBe(0);
+      30 |         expect(spaceCraft.direction).toBe('S');
+      31 |     });
+
+      at Object.toBe (spaceCraft.test.js:28:30)
+
+  ● moveForward › SpaceCraft moves forward in E direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      34 |         const spaceCraft = new SpaceCraft(0, 0, 0, 'E');
+      35 |         spaceCraft.moveForward();
+    > 36 |         expect(spaceCraft.x).toBe(1);
+         |                              ^
+      37 |         expect(spaceCraft.y).toBe(0);
+      38 |         expect(spaceCraft.z).toBe(0);
+      39 |         expect(spaceCraft.direction).toBe('E');
+
+      at Object.toBe (spaceCraft.test.js:36:30)
+
+  ● moveForward › SpaceCraft moves forward in W direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: -1
+    Received: 0
+
+      43 |         const spaceCraft = new SpaceCraft(0, 0, 0, 'W');
+      44 |         spaceCraft.moveForward();
+    > 45 |         expect(spaceCraft.x).toBe(-1);
+         |                              ^
+      46 |         expect(spaceCraft.y).toBe(0);
+      47 |         expect(spaceCraft.z).toBe(0);
+      48 |         expect(spaceCraft.direction).toBe('W');
+
+      at Object.toBe (spaceCraft.test.js:45:30)
+
+  ● moveForward › SpaceCraft moves forward in U direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      54 |         expect(spaceCraft.x).toBe(0);
+      55 |         expect(spaceCraft.y).toBe(0);
+    > 56 |         expect(spaceCraft.z).toBe(1);
+         |                              ^
+      57 |         expect(spaceCraft.direction).toBe('U');
+      58 |     });
+      59 |
+
+      at Object.toBe (spaceCraft.test.js:56:30)
+
+  ● moveForward › SpaceCraft moves forward in D direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: -1
+    Received: 0
+
+      63 |         expect(spaceCraft.x).toBe(0);
+      64 |         expect(spaceCraft.y).toBe(0);
+    > 65 |         expect(spaceCraft.z).toBe(-1);
+         |                              ^
+      66 |         expect(spaceCraft.direction).toBe('D');
+      67 |     });
+      68 | });
+
+      at Object.toBe (spaceCraft.test.js:65:30)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       5 failed, 2 passed, 7 total                                                                                                                        
+Snapshots:   0 total
+Time:        0.631 s, estimated 1 s
+Ran all test suites.
+```
+### Ninth Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction                                                                                                                   
+    √ SpaceCraft moves forward in S direction                                                                                                                   
+    √ SpaceCraft moves forward in E direction                                                                                                                   
+    √ SpaceCraft moves forward in W direction                                                                                                                   
+    √ SpaceCraft moves forward in U direction                                                                                                                   
+    √ SpaceCraft moves forward in D direction (2 ms)                                                                                                            
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       7 passed, 7 total                                                                                                                                  
+Snapshots:   0 total
+Time:        0.651 s, estimated 1 s
+Ran all test suites.
+```
+### Tenth Commit
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (2 ms)
+  moveForward
+    √ SpaceCraft moves forward in N direction
+    √ SpaceCraft moves forward in S direction (1 ms)
+    √ SpaceCraft moves forward in E direction
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in D direction (1 ms)                                                                                                            
+  moveBackward                                                                                                                                                  
+    × SpaceCraft moves backward in N direction (2 ms)                                                                                                           
+                                                                                                                                                                
+  ● moveBackward › SpaceCraft moves backward in N direction                                                                                                     
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: -1
+    Received: 0
+
+      73 |         spaceCraft.moveBackward();
+      74 |         expect(spaceCraft.x).toBe(0);
+    > 75 |         expect(spaceCraft.y).toBe(-1);
+         |                              ^
+      76 |         expect(spaceCraft.z).toBe(0);
+      77 |         expect(spaceCraft.direction).toBe('N');
+      78 |     });
+
+      at Object.toBe (spaceCraft.test.js:75:30)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       1 failed, 7 passed, 8 total                                                                                                                        
+Snapshots:   0 total
+Time:        0.653 s, estimated 1 s
+Ran all test suites.
+```

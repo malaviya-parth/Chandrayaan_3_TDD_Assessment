@@ -26,6 +26,12 @@ class SpaceCraft {
             this.z -= 1;
         }
     }
+
+    moveBackward() {}
+    turnRight() {}
+    turnLeft() {}
+    turnUp() {}
+    turnDown() {}
 }
 
 module.exports = SpaceCraft;
