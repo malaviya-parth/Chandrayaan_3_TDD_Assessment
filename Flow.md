@@ -16,3 +16,35 @@ In D:\Incubyte\Chandrayaan_3_TDD_Assessment
   testRegex:  - 0 matches
 Pattern:  - 0 matches
 ```
+### Third Commit
+Added Flow.md file
+### Fourth Commit
+Check whether object is created with the given input
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    × SpaceCraft initialises with x, y, z and direction (8 ms)                                                                                                  
+                                                                                                                                                                
+  ● spaceCraft › SpaceCraft initialises with x, y, z and direction
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: undefined
+
+       6 |    test ('SpaceCraft initialises with x, y, z and direction', () => {
+       7 |          const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+    >  8 |          expect(spaceCraft.x).toBe(0);
+         |                               ^
+       9 |          expect(spaceCraft.y).toBe(0);
+      10 |          expect(spaceCraft.z).toBe(0);
+      11 |          expect(spaceCraft.direction).toBe('N');
+
+      at Object.toBe (spaceCraft.test.js:8:31)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       1 failed, 1 total                                                                                                                                  
+Snapshots:   0 total
+Time:        0.598 s, estimated 1 s
+Ran all test suites.
+```
