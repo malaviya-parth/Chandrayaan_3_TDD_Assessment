@@ -47,7 +47,9 @@ class SpaceCraft {
             this.z += 1;
         }
     }
-    turnRight() {}
+    turnRight() {
+        this.direction = 'E';
+    }
     turnLeft() {}
     turnUp() {}
     turnDown() {}

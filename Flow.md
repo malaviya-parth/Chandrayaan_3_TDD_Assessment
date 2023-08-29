@@ -424,3 +424,75 @@ Snapshots:   0 total
 Time:        0.601 s, estimated 1 s
 Ran all test suites.
 ```
+### Forteenth Commit
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (2 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in S direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in E direction                                                                                                                   
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in D direction (1 ms)                                                                                                            
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in S direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in E direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in W direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in U direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in D direction (5 ms)                                                                                                           
+  turnRight                                                                                                                                                     
+    × SpaceCraft turns right from N direction (3 ms)                                                                                                            
+                                                                                                                                                                
+  ● turnRight › SpaceCraft turns right from N direction                                                                                                         
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "E"
+    Received: "N"
+
+      131 |         expect(spaceCraft.y).toBe(0);
+      132 |         expect(spaceCraft.z).toBe(0);
+    > 133 |         expect(spaceCraft.direction).toBe('E');
+          |                                      ^
+      134 |     });
+      135 | });
+
+      at Object.toBe (spaceCraft.test.js:133:38)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       1 failed, 13 passed, 14 total                                                                                                                      
+Snapshots:   0 total
+Time:        0.685 s, estimated 1 s
+Ran all test suites.
+```
+### Fifteenth Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in S direction                                                                                                                   
+    √ SpaceCraft moves forward in E direction                                                                                                                   
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction                                                                                                                   
+    √ SpaceCraft moves forward in D direction                                                                                                                   
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (2 ms)                                                                                                           
+    √ SpaceCraft moves backward in S direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in E direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in W direction
+    √ SpaceCraft moves backward in U direction
+    √ SpaceCraft moves backward in D direction (1 ms)
+  turnRight
+    √ SpaceCraft turns right from N direction
+
+Test Suites: 1 passed, 1 total
+Tests:       14 passed, 14 total
+Snapshots:   0 total
+Time:        0.629 s, estimated 1 s
+Ran all test suites.
+```
