@@ -10,6 +10,21 @@ class SpaceCraft {
         if(this.direction === 'N') {
             this.y += 1;
         }
+        else if(this.direction === 'S') {
+            this.y -= 1;
+        }
+        else if(this.direction === 'E') {
+            this.x += 1;
+        }
+        else if(this.direction === 'W') {
+            this.x -= 1;
+        }
+        else if(this.direction === 'U') {
+            this.z += 1;
+        }
+        else if(this.direction === 'D') {
+            this.z -= 1;
+        }
     }
 }
 
