@@ -20,4 +20,49 @@ describe('moveForward', () => {
         expect(spaceCraft.z).toBe(0);
         expect(spaceCraft.direction).toBe('N');
     });
+
+    test('SpaceCraft moves forward in S direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'S');
+        spaceCraft.moveForward();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(-1);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('S');
+    });
+
+    test('SpaceCraft moves forward in E direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'E');
+        spaceCraft.moveForward();
+        expect(spaceCraft.x).toBe(1);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('E');
+    });
+
+    test('SpaceCraft moves forward in W direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'W');
+        spaceCraft.moveForward();
+        expect(spaceCraft.x).toBe(-1);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('W');
+    });
+
+    test('SpaceCraft moves forward in U direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'U');
+        spaceCraft.moveForward();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(1);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft moves forward in D direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'D');
+        spaceCraft.moveForward();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(-1);
+        expect(spaceCraft.direction).toBe('D');
+    });
 });
