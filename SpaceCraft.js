@@ -27,7 +27,11 @@ class SpaceCraft {
         }
     }
 
-    moveBackward() {}
+    moveBackward() {
+        if(this.direction === 'N') {
+            this.y -= 1;
+        }
+    }
     turnRight() {}
     turnLeft() {}
     turnUp() {}

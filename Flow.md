@@ -266,3 +266,24 @@ Snapshots:   0 total
 Time:        0.653 s, estimated 1 s
 Ran all test suites.
 ```
+### Eleventh Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (3 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in S direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in E direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction                                                                                                                   
+    √ SpaceCraft moves forward in D direction                                                                                                                   
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (1 ms)                                                                                                           
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       8 passed, 8 total                                                                                                                                  
+Snapshots:   0 total
+Time:        0.605 s, estimated 1 s
+Ran all test suites.
+```
