@@ -5,6 +5,8 @@ class SpaceCraft {
         this.z = z;
         this.direction = direction;
     }
+
+    moveForward() {}
 }
 
 module.exports = SpaceCraft;
