@@ -6,7 +6,11 @@ class SpaceCraft {
         this.direction = direction;
     }
 
-    moveForward() {}
+    moveForward() {
+        if(this.direction === 'N') {
+            this.y += 1;
+        }
+    }
 }
 
 module.exports = SpaceCraft;
