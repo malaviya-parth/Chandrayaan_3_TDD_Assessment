@@ -177,5 +177,60 @@ describe('turnRight', () => {
         expect(spaceCraft.z).toBe(0);
         expect(spaceCraft.direction).toBe('D');
     });
+});
 
+describe('turnLeft', () => {
+    test('SpaceCraft turns left from N direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('W');
+    });
+
+    test('SpaceCraft turns left from S direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'S');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('E');
+    });
+
+    test('SpaceCraft turns left from E direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'E');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('N');
+    });
+
+    test('SpaceCraft turns left from W direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'W');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('S');
+    });
+
+    test('SpaceCraft turns left from U direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'U');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns left from D direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'D');
+        spaceCraft.turnLeft();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('D');
+    });
 });
