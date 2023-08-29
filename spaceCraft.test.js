@@ -122,3 +122,14 @@ describe('moveBackward', () => {
         expect(spaceCraft.direction).toBe('D');
     });
 });
+
+describe('turnRight', () => {
+    test('SpaceCraft turns right from N direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+        spaceCraft.turnRight();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('E');
+    });
+});
