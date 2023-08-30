@@ -61,10 +61,10 @@ class SpaceCraft {
             this.direction = 'N';
         }
         else if(this.direction === 'U') {
-            this.direction = this.direction;
+            this.direction = 'S';
         }
         else if(this.direction === 'D') {
-            this.direction = this.direction;
+            this.direction = 'N';
         }
     }
     turnLeft() {
@@ -81,10 +81,10 @@ class SpaceCraft {
             this.direction = 'S';
         }
         else if(this.direction === 'U') {
-            this.direction = this.direction;
+            this.direction = 'N';
         }
         else if(this.direction === 'D') {
-            this.direction = this.direction;
+            this.direction = 'S';
         }
     }
     turnUp() {
