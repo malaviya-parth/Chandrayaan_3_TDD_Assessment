@@ -166,7 +166,7 @@ describe('turnRight', () => {
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(0);
         expect(spaceCraft.z).toBe(0);
-        expect(spaceCraft.direction).toBe('U');
+        expect(spaceCraft.direction).toBe('S');
     });
 
     test('SpaceCraft turns right from D direction', () => {
@@ -175,7 +175,7 @@ describe('turnRight', () => {
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(0);
         expect(spaceCraft.z).toBe(0);
-        expect(spaceCraft.direction).toBe('D');
+        expect(spaceCraft.direction).toBe('N');
     });
 });
 
@@ -222,7 +222,7 @@ describe('turnLeft', () => {
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(0);
         expect(spaceCraft.z).toBe(0);
-        expect(spaceCraft.direction).toBe('U');
+        expect(spaceCraft.direction).toBe('N');
     });
 
     test('SpaceCraft turns left from D direction', () => {
@@ -231,7 +231,7 @@ describe('turnLeft', () => {
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(0);
         expect(spaceCraft.z).toBe(0);
-        expect(spaceCraft.direction).toBe('D');
+        expect(spaceCraft.direction).toBe('S');
     });
 });
 
