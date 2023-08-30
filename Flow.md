@@ -973,3 +973,65 @@ Snapshots:   0 total
 Time:        0.628 s, estimated 1 s
 Ran all test suites.
 ```
+### Twenty Second Commit
+```
+
+```
+### Twenty Third Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (2 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in S direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in E direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction                                                                                                                   
+    √ SpaceCraft moves forward in D direction                                                                                                                   
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in S direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in E direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in W direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in U direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in D direction                                                                                                                  
+  turnRight                                                                                                                                                     
+    √ SpaceCraft turns right from N direction                                                                                                                   
+    √ SpaceCraft turns right from S direction                                                                                                                   
+    √ SpaceCraft turns right from E direction                                                                                                                   
+    √ SpaceCraft turns right from W direction (1 ms)                                                                                                            
+    √ SpaceCraft turns right from U direction (1 ms)                                                                                                            
+    √ SpaceCraft turns right from D direction                                                                                                                   
+  turnLeft                                                                                                                                                      
+    √ SpaceCraft turns left from N direction                                                                                                                    
+    √ SpaceCraft turns left from S direction                                                                                                                    
+    √ SpaceCraft turns left from E direction                                                                                                                    
+    √ SpaceCraft turns left from W direction                                                                                                                    
+    √ SpaceCraft turns left from U direction (1 ms)                                                                                                             
+    √ SpaceCraft turns left from D direction (1 ms)                                                                                                             
+  turnUp                                                                                                                                                        
+    √ SpaceCraft turns up from N direction (1 ms)                                                                                                               
+    √ SpaceCraft turns up from S direction                                                                                                                      
+    √ SpaceCraft turns up from E direction                                                                                                                      
+    √ SpaceCraft turns up from W direction                                                                                                                      
+    √ SpaceCraft turns up from U direction (3 ms)                                                                                                               
+    √ SpaceCraft turns up from D direction                                                                                                                      
+  turnDown                                                                                                                                                      
+    √ SpaceCraft turns down from N direction (1 ms)                                                                                                             
+    √ SpaceCraft turns down from S direction                                                                                                                    
+    √ SpaceCraft turns down from E direction                                                                                                                    
+    √ SpaceCraft turns down from W direction (1 ms)                                                                                                             
+    √ SpaceCraft turns down from U direction                                                                                                                    
+    √ SpaceCraft turns down from D direction                                                                                                                                                                                                                                                
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       37 passed , 37 total                                                                                                                                
+Snapshots:   0 total
+Time:        0.435 s, estimated 1 s
+Ran all test suites.
+```
+
+**How TDD helped me?**
+- At 30th commit I came to know that my interpretation for moving left from Up and Down will also change the direction of SpaceCraft. So I changed the code and test cases accordingly in the following two commits.
+- Further TDD also encourages Code Refactoring which is the "Third Rule" of TDD. So, Enhanced the code in the **commit number 33**.
