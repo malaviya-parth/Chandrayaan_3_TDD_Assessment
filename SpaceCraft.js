@@ -7,84 +7,94 @@ class SpaceCraft {
     }
 
     moveForward() {
-        if(this.direction === 'N') {
-            this.y += 1;
-        }
-        else if(this.direction === 'S') {
-            this.y -= 1;
-        }
-        else if(this.direction === 'E') {
-            this.x += 1;
-        }
-        else if(this.direction === 'W') {
-            this.x -= 1;
-        }
-        else if(this.direction === 'U') {
-            this.z += 1;
-        }
-        else if(this.direction === 'D') {
-            this.z -= 1;
+        switch(this.direction) {
+            case 'N':
+                this.y += 1;
+                break;
+            case 'S':
+                this.y -= 1;
+                break;
+            case 'E':
+                this.x += 1;
+                break;
+            case 'W':
+                this.x -= 1;
+                break;
+            case 'U':
+                this.z += 1;
+                break;
+            case 'D':
+                this.z -= 1;
+                break;
         }
     }
 
     moveBackward() {
-        if(this.direction === 'N') {
-            this.y -= 1;
-        }
-        else if(this.direction === 'S') {
-            this.y += 1;
-        }
-        else if(this.direction === 'E') {
-            this.x -= 1;
-        }
-        else if(this.direction === 'W') {
-            this.x += 1;
-        }
-        else if(this.direction === 'U') {
-            this.z -= 1;
-        }
-        else if(this.direction === 'D') {
-            this.z += 1;
+        switch(this.direction) {
+            case 'N':
+                this.y -= 1;
+                break;
+            case 'S':
+                this.y += 1;
+                break;
+            case 'E':
+                this.x -= 1;
+                break;
+            case 'W':
+                this.x += 1;
+                break;
+            case 'U':
+                this.z -= 1;
+                break;
+            case 'D':
+                this.z += 1;
+                break;
         }
     }
     turnRight() {
-        if(this.direction === 'N') {
-            this.direction = 'E';
-        }
-        else if(this.direction === 'S') {
-            this.direction = 'W';
-        }
-        else if(this.direction === 'E') {
-            this.direction = 'S';
-        }
-        else if(this.direction === 'W') {
-            this.direction = 'N';
-        }
-        else if(this.direction === 'U') {
-            this.direction = 'S';
-        }
-        else if(this.direction === 'D') {
-            this.direction = 'N';
+
+        switch(this.direction) {
+            case 'N':
+                this.direction = 'E';
+                break;
+            case 'S':
+                this.direction = 'W';
+                break;
+            case 'E':
+                this.direction = 'S';
+                break;
+            case 'W':
+                this.direction = 'N';
+                break;
+            case 'U':
+                this.direction = 'S';
+                break;
+            case 'D':
+                this.direction = 'N';
+                break;
         }
     }
     turnLeft() {
-        if(this.direction === 'N') {
-            this.direction = 'W';
-        }
-        else if(this.direction === 'S') {
-            this.direction = 'E';
-        }
-        else if(this.direction === 'E') {
-            this.direction = 'N';
-        }
-        else if(this.direction === 'W') {
-            this.direction = 'S';
-        }
-        else if(this.direction === 'U') {
-            this.direction = 'N';
-        }
-        else if(this.direction === 'D') {
-            this.direction = 'S';
+
+        switch(this.direction) {
+            case 'N':
+                this.direction = 'W';
+                break;
+            case 'S':
+                this.direction = 'E';
+                break;
+            case 'E':
+                this.direction = 'N';
+                break;
+            case 'W':
+                this.direction = 'S';
+                break;
+            case 'U':
+                this.direction = 'N';
+                break;
+            case 'D':
+                this.direction = 'S';
+                break;
         }
     }
     turnUp() {
@@ -101,20 +111,26 @@ class SpaceCraft {
     }
     
     executeSingleCommand(command) {
-        if(command === 'f') {
-            this.moveForward();
-        }
-        if(command === 'r') {
-            this.turnRight();
-        }
-        if(command === 'u'){
-            this.turnUp();
-        }
-        if(command === 'b'){
-            this.moveBackward();
-        }
-        if(command === 'l'){
-            this.turnLeft();
+
+        switch(command) {
+            case 'f':
+                this.moveForward();
+                break;
+            case 'r':
+                this.turnRight();
+                break;
+            case 'u':
+                this.turnUp();
+                break;
+            case 'b':
+                this.moveBackward();
+                break;
+            case 'l':
+                this.turnLeft();
+                break;
+            case 'd':
+                this.turnDown();
+                break;
         }
     }
     
