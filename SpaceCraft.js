@@ -110,6 +110,9 @@ class SpaceCraft {
         if(command === 'u'){
             this.turnUp();
         }
+        if(command === 'b'){
+            this.moveBackward();
+        }
     }
     
 }
