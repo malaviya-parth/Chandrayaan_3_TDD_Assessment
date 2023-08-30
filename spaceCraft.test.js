@@ -350,11 +350,10 @@ describe('turnDown', () => {
 describe('Command Execution', () => {
     test('SpaceCraft executes command', () => {
         const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
-        spaceCraft.executeCommand('frub');
+        spaceCraft.executeCommand('frubl');
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(1);
         expect(spaceCraft.z).toBe(-1);
-        expect(spaceCraft.direction).toBe('U');
+        expect(spaceCraft.direction).toBe('N');
     });
-
 });
