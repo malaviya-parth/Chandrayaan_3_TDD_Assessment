@@ -90,7 +90,9 @@ class SpaceCraft {
     turnUp() {
         this.direction = 'U';
     }
-    turnDown() {}
+    turnDown() {
+        this.direction = 'D';
+    }
 }
 
 module.exports = SpaceCraft;

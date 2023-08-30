@@ -298,7 +298,7 @@ describe('turnDown', () => {
         expect(spaceCraft.x).toBe(0);
         expect(spaceCraft.y).toBe(0);
         expect(spaceCraft.z).toBe(0);
-        expect(spaceCraft.direction).toBe('');
+        expect(spaceCraft.direction).toBe('D');
     });
 
     test('SpaceCraft turns down from S direction', () => {
