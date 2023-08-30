@@ -94,7 +94,11 @@ class SpaceCraft {
         this.direction = 'D';
     }
 
-    executeCommand(command) {}
+    executeCommand(command) {
+        if(command === 'f') {
+            this.moveForward();
+        }
+    }
 }
 
 module.exports = SpaceCraft;
