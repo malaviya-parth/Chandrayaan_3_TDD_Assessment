@@ -87,7 +87,9 @@ class SpaceCraft {
             this.direction = this.direction;
         }
     }
-    turnUp() {}
+    turnUp() {
+        this.direction = 'U';
+    }
     turnDown() {}
 }
 

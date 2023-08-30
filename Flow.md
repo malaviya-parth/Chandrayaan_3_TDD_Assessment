@@ -926,3 +926,50 @@ Snapshots:   0 total
 Time:        0.792 s, estimated 1 s
 Ran all test suites.
 ```
+### TwentyFirst Commit
+```
+ PASS  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (2 ms)                                                                                                  
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)
+    √ SpaceCraft moves forward in S direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in E direction                                                                                                                   
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in D direction (1 ms)                                                                                                            
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in S direction                                                                                                                  
+    √ SpaceCraft moves backward in E direction                                                                                                                  
+    √ SpaceCraft moves backward in W direction                                                                                                                  
+    √ SpaceCraft moves backward in U direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in D direction (1 ms)                                                                                                           
+  turnRight                                                                                                                                                     
+    √ SpaceCraft turns right from N direction (1 ms)                                                                                                            
+    √ SpaceCraft turns right from S direction (1 ms)                                                                                                            
+    √ SpaceCraft turns right from E direction                                                                                                                   
+    √ SpaceCraft turns right from W direction                                                                                                                   
+    √ SpaceCraft turns right from U direction (1 ms)                                                                                                            
+    √ SpaceCraft turns right from D direction                                                                                                                   
+  turnLeft                                                                                                                                                      
+    √ SpaceCraft turns left from N direction (6 ms)                                                                                                             
+    √ SpaceCraft turns left from S direction (1 ms)                                                                                                             
+    √ SpaceCraft turns left from E direction                                                                                                                    
+    √ SpaceCraft turns left from W direction                                                                                                                    
+    √ SpaceCraft turns left from U direction (1 ms)                                                                                                             
+    √ SpaceCraft turns left from D direction (1 ms)                                                                                                             
+  turnUp                                                                                                                                                        
+    √ SpaceCraft turns up from N direction (1 ms)                                                                                                               
+    √ SpaceCraft turns up from S direction (1 ms)                                                                                                               
+    √ SpaceCraft turns up from E direction                                                                                                                      
+    √ SpaceCraft turns up from W direction                                                                                                                      
+    √ SpaceCraft turns up from U direction (1 ms)                                                                                                               
+    √ SpaceCraft turns up from D direction                                                                                                                      
+                                                                                                                                                                
+Test Suites: 1 passed, 1 total                                                                                                                                  
+Tests:       31 passed, 31 total                                                                                                                                
+Snapshots:   0 total
+Time:        0.628 s, estimated 1 s
+Ran all test suites.
+```
