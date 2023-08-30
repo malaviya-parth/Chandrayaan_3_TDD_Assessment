@@ -17,6 +17,10 @@
     ```
     npm test
     ```
+5. Run the project:
+    ```
+    npm start
+    ```
 
 **Perks of TDD**
 - Good thing about TDD is it helps you to think about the problem before you start coding.
