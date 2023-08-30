@@ -346,3 +346,14 @@ describe('turnDown', () => {
         expect(spaceCraft.direction).toBe('D');
     });
 });
+
+describe('Command Execution', () => {
+    test('SpaceCraft executes command', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+        spaceCraft.executeCommand('f');
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(1);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('N');
+    });
+});

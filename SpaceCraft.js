@@ -93,6 +93,8 @@ class SpaceCraft {
     turnDown() {
         this.direction = 'D';
     }
+
+    executeCommand(command) {}
 }
 
 module.exports = SpaceCraft;
