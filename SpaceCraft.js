@@ -95,10 +95,20 @@ class SpaceCraft {
     }
 
     executeCommand(command) {
+        for(let i = 0; i < command.length; i++) {
+            this.executeSingleCommand(command[i]);
+        }
+    }
+    
+    executeSingleCommand(command) {
         if(command === 'f') {
             this.moveForward();
         }
+        if(command === 'r') {
+            this.turnRight();
+        }
     }
+    
 }
 
 module.exports = SpaceCraft;
