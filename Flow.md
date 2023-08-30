@@ -795,3 +795,134 @@ Snapshots:   0 total
 Time:        0.846 s, estimated 1 s
 Ran all test suites.
 ```
+### Twentieth Commit
+```
+ FAIL  ./spaceCraft.test.js
+  spaceCraft
+    √ SpaceCraft initialises with x, y, z and direction (2 ms)
+  moveForward                                                                                                                                                   
+    √ SpaceCraft moves forward in N direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in S direction                                                                                                                   
+    √ SpaceCraft moves forward in E direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in W direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in U direction (1 ms)                                                                                                            
+    √ SpaceCraft moves forward in D direction (1 ms)                                                                                                            
+  moveBackward                                                                                                                                                  
+    √ SpaceCraft moves backward in N direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in S direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in E direction (1 ms)                                                                                                           
+    √ SpaceCraft moves backward in W direction                                                                                                                  
+    √ SpaceCraft moves backward in U direction                                                                                                                  
+    √ SpaceCraft moves backward in D direction (1 ms)                                                                                                           
+  turnRight                                                                                                                                                     
+    √ SpaceCraft turns right from N direction                                                                                                                   
+    √ SpaceCraft turns right from S direction                                                                                                                   
+    √ SpaceCraft turns right from E direction                                                                                                                   
+    √ SpaceCraft turns right from W direction                                                                                                                   
+    √ SpaceCraft turns right from U direction                                                                                                                   
+    √ SpaceCraft turns right from D direction                                                                                                                   
+  turnLeft                                                                                                                                                      
+    √ SpaceCraft turns left from N direction                                                                                                                    
+    √ SpaceCraft turns left from S direction (1 ms)                                                                                                             
+    √ SpaceCraft turns left from E direction (1 ms)                                                                                                             
+    √ SpaceCraft turns left from W direction                                                                                                                    
+    √ SpaceCraft turns left from U direction                                                                                                                    
+    √ SpaceCraft turns left from D direction                                                                                                                    
+  turnUp                                                                                                                                                        
+    × SpaceCraft turns up from N direction (2 ms)                                                                                                               
+    × SpaceCraft turns up from S direction (1 ms)                                                                                                               
+    × SpaceCraft turns up from E direction                                                                                                                      
+    × SpaceCraft turns up from W direction                                                                                                                      
+    √ SpaceCraft turns up from U direction                                                                                                                      
+    × SpaceCraft turns up from D direction (2 ms)                                                                                                               
+                                                                                                                                                                
+  ● turnUp › SpaceCraft turns up from N direction                                                                                                               
+                                                                                                                                                                
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "U"
+    Received: "N"
+
+      243 |         expect(spaceCraft.y).toBe(0);
+      244 |         expect(spaceCraft.z).toBe(0);
+    > 245 |         expect(spaceCraft.direction).toBe('U');
+          |                                      ^
+      246 |     });
+      247 |
+      248 |     test('SpaceCraft turns up from S direction', () => {
+
+      at Object.toBe (spaceCraft.test.js:245:38)
+
+  ● turnUp › SpaceCraft turns up from S direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "U"
+    Received: "S"
+
+      252 |         expect(spaceCraft.y).toBe(0);
+      253 |         expect(spaceCraft.z).toBe(0);
+    > 254 |         expect(spaceCraft.direction).toBe('U');
+          |                                      ^
+      255 |     });
+      256 |
+      257 |     test('SpaceCraft turns up from E direction', () => {
+
+      at Object.toBe (spaceCraft.test.js:254:38)
+
+  ● turnUp › SpaceCraft turns up from E direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "U"
+    Received: "E"
+
+      261 |         expect(spaceCraft.y).toBe(0);
+      262 |         expect(spaceCraft.z).toBe(0);
+    > 263 |         expect(spaceCraft.direction).toBe('U');
+          |                                      ^
+      264 |     });
+      265 |
+      266 |     test('SpaceCraft turns up from W direction', () => {
+
+      at Object.toBe (spaceCraft.test.js:263:38)
+
+  ● turnUp › SpaceCraft turns up from W direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "U"
+    Received: "W"
+
+      270 |         expect(spaceCraft.y).toBe(0);
+      271 |         expect(spaceCraft.z).toBe(0);
+    > 272 |         expect(spaceCraft.direction).toBe('U');
+          |                                      ^
+      273 |     });
+      274 |
+      275 |     test('SpaceCraft turns up from U direction', () => {
+
+      at Object.toBe (spaceCraft.test.js:272:38)
+
+  ● turnUp › SpaceCraft turns up from D direction
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "U"
+    Received: "D"
+
+      288 |         expect(spaceCraft.y).toBe(0);
+      289 |         expect(spaceCraft.z).toBe(0);
+    > 290 |         expect(spaceCraft.direction).toBe('U');
+          |                                      ^
+      291 |     });
+      292 | });
+
+      at Object.toBe (spaceCraft.test.js:290:38)
+
+Test Suites: 1 failed, 1 total                                                                                                                                  
+Tests:       5 failed, 26 passed, 31 total                                                                                                                      
+Snapshots:   0 total
+Time:        0.792 s, estimated 1 s
+Ran all test suites.
+```

@@ -234,3 +234,59 @@ describe('turnLeft', () => {
         expect(spaceCraft.direction).toBe('D');
     });
 });
+
+describe('turnUp', () => {
+    test('SpaceCraft turns up from N direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'N');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns up from S direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'S');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns up from E direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'E');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns up from W direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'W');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns up from U direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'U');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+
+    test('SpaceCraft turns up from D direction', () => {
+        const spaceCraft = new SpaceCraft(0, 0, 0, 'D');
+        spaceCraft.turnUp();
+        expect(spaceCraft.x).toBe(0);
+        expect(spaceCraft.y).toBe(0);
+        expect(spaceCraft.z).toBe(0);
+        expect(spaceCraft.direction).toBe('U');
+    });
+});
