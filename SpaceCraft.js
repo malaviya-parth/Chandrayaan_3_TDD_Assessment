@@ -107,6 +107,9 @@ class SpaceCraft {
         if(command === 'r') {
             this.turnRight();
         }
+        if(command === 'u'){
+            this.turnUp();
+        }
     }
     
 }
